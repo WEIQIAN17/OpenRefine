@@ -45,6 +45,7 @@ public class RandomNumber implements Function {
 
     @Override
     public Object call(Properties bindings, Object[] args) {
+        /*2-args types add like long and double*/
         if (args.length >= 2 && args[0] != null && args[0] instanceof Number
                 && args[1] != null && args[1] instanceof Number && ((Number) args[0]).intValue() < ((Number) args[1]).intValue()) {
             int low = ((Number) args[0]).intValue();
@@ -64,6 +65,7 @@ public class RandomNumber implements Function {
                     }
                 }
             }
+            /*0-arg add*/
         } else if(args.length == 0){
             double randomDoubleNum = 1.0 * Math.round(100 * (0 + Math.random() * (1 - 0))) / 100;
             return randomDoubleNum;
