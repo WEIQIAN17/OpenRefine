@@ -44,6 +44,10 @@ public class RandomNumberTest extends RefineTest {
 
     static Properties bindings = new Properties();
 
+    /**
+     * The test to verify the 2-args parameter behavior.
+     */
+    // CS 427 Issue link: https://github.com/OpenRefine/OpenRefine/issues/3143
     @Test
     public void testRandomNumberWithTwoParam() {
         RandomNumber rn = new RandomNumber();
@@ -53,6 +57,10 @@ public class RandomNumberTest extends RefineTest {
         }
     }
 
+    /**
+     * The test to verify the 2-args parameter Long type behavior.
+     */
+    // CS 427 Issue link: https://github.com/OpenRefine/OpenRefine/issues/3143
     @Test
     public void testRandomNumberWithThreeParamLongType() {
         RandomNumber rn = new RandomNumber();
@@ -63,6 +71,10 @@ public class RandomNumberTest extends RefineTest {
         }
     }
 
+    /**
+     * The test to verify the 2-args parameter Double type behavior.
+     */
+    // CS 427 Issue link: https://github.com/OpenRefine/OpenRefine/issues/3143
     @Test
     public void testRandomNumberWithThreeParamDoubleType() {
         RandomNumber rn = new RandomNumber();
@@ -73,6 +85,11 @@ public class RandomNumberTest extends RefineTest {
         }
     }
 
+
+    /**
+     * The test to verify the 0-arg parameter behavior.
+     */
+    // CS 427 Issue link: https://github.com/OpenRefine/OpenRefine/issues/3143
     @Test
     public void testRandomNumberWithZeroParam() {
         RandomNumber rn = new RandomNumber();
