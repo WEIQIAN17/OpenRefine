@@ -40,7 +40,10 @@ import java.util.concurrent.ThreadLocalRandom;
 import com.google.refine.expr.EvalError;
 import com.google.refine.grel.ControlFunctionRegistry;
 import com.google.refine.grel.Function;
-
+/*
+create a 0-arg version which returns a Double in the interval 0.0 - 1.0
+provide two alternatives for the 2-arg version which return either an Long or a Double, depending on type of the parameters which are passed in
+ */
 public class RandomNumber implements Function {
 
     @Override
